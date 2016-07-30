@@ -16,7 +16,7 @@ $this: () !default;
 }
 ```
 
-Important files to check out:
+## Important files to check out
 1. src/styles/styles.scss
 2. src/styles/blocks/_myblock.scc
 

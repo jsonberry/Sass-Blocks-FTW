@@ -1,0 +1,41 @@
+$this: (
+    // Block name
+    block:                  contentBlock,
+
+    // Block variables
+    height:                 300px,
+    font-family:            'Arial',
+    font-size:              14px,
+    subheight:              $global-height-value,
+    brandColor:             $global-color-brand,
+    success:                $global-color-success,
+    subHead-font-size:      14px,
+    margin:                 0 auto,
+    max-width:              375px,
+    text-align:             center,
+
+);
+
+.#{this(block)} {
+    height: this(height);
+    font-family: this(font-family);
+    font-size: this(font-size);
+    margin: this(margin);
+    max-width: this(max-width);
+    text-align: this(text-align);
+
+    &__subhead {
+        height: this(subheight);
+        font-size: this(subHead-font-size);
+
+        &--brandColor {
+            color: this(brandColor);
+        }
+
+        &--success {
+          color: this(success);
+        }
+    }
+}
+
+$this: null;
